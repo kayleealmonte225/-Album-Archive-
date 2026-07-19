@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>♫⋆｡Album Archive♪♬</title>
+    <style>
+    .album-card {
+        padding: 20px;
+        border-radius: 10px;
+        margin: 30px auto;
+        width: 350px;
+        flex-shrink: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .olivia {
+        background-color: white;
+        
+    }
+    .v {
+        background-color: white;
+    }
+    .addison {
+        background-color: white;
+    }
+    .album-cover {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .bunny {
+        background-color: white;
+    }
+    .superache {
+        background-color: white;
+    }
+    .chrome {
+        background-color: white;
+    }
+    .guts {
+        background-color:white;
+    }
+    .submarine {
+        background-color: white;
+    }
+    .damn {
+        background-color: white;
+    }
+    .escape {
+        background-color: white;
+    }
+    .late {
+        background-color: white;
+    }
+    .pray {
+        background-color: white;
+    }
+    .soul {
+        background-color: white
+    }
+    .enter {
+        background-color: white;
+    }
+    .ctrl {
+        background-color: white;
+    }
+    .skool {
+        background-color:white;
+    }
+    .charm {
+        background-color:white;
+    }
+    .best {
+        background-color:white
+    }
+    .love {
+        background-color: white;
+    }
+    .verano {
+        background-color: white;
+    }
+    .live{
+        background-color: white;
+    }
+    .short {
+        background-color:white;
+    }
+    .nadie {
+        background-color:white;
+    }
+   
+    .ultra{
+        background-color:white;
+    }
+    .most {
+        background-color:white;
+    }
+    .debir {
+        background-color:white;
+    }
+    .new {
+        background-color: white;
+    }
+    .jean {
+        background-color:white;
+    }
+    .romance{
+        background-color:white;
+    }
+    .map {
+        background-color:white;
+    }
+    .hit {
+        background-color: white;
+    }
+    .mac {
+        background-color:white;
+    }
+    .romantic {
+        background-color:white;
+    }
+    .sour {
+        background-color:white;
+    }
+    .doo {
+        background-color: white;
+    }
+    .juke {
+        background-color: white;
+    }
+body {
+
+    background-color: #f0f0f0;
+        font-family: "Playfair Display", serif;
+        text-align: center;
+    }
+    h1 {
+        font-size: 40px;
+        color: #000000;
+    }
+    h2 {
+        scroll-margin-top: 100px;
+    }
+    .album-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 10px 30px;
+        scrollbar-width: none;
+        box-sizing: border-box;
+        
+    }
+    .album-container::-webkit-scrollbar {
+    display: none;
+}
+
+.album-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.album-container::-webkit-scrollbar-thumb {
+    background: rgb(240, 151, 180);
+    border-radius: 10px;
+}
+   nav {
+    background-color: rgb(206, 88, 127);
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin:5px;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+    nav a:hover {
+    color: hotpink;
+}
+
+ 
+
+.album-card:hover {
+    transform: scale(1.03);
+}
+.my-albums {
+    background-color: palevioletred;
+    padding: 30px;
+    border-radius: 10px;
+    margin:20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.sammy-faves {
+    background-color: rgb(247, 130, 169);
+    padding: 30px;
+    border-radius: 10px;
+    margin:20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.shay-fave {
+    background-color: rgb(248, 157, 188);
+    padding: 30px;
+    border-radius: 10px;
+    margin:20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.about {
+    background-color: rgb(255, 203, 220);
+    padding: 30px;
+    border-radius: 10px;
+    margin:20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: rgb(255, 219, 231);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+}
+footer h2 {
+    color: black
+}
+footer p {
+    color: black
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin:5px;
+    background-color: white;
+     padding: 10px 15px;
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<nav> 
+ <a href="#my-albums">My Albums</a>
+ <a href="#sammy-faves">Sammy's Faves</a>
+ <a href="#shay-fave">Shay's Faves</a>
+ <a href="#museum">Album Museum</a>
+ <a href="#about">About</a>
+</nav>
+
+
+
+<h1 id="back-top">♫⋆｡ Album Archive ♪♬</h1>
+<div class="my-albums">
+<h2 id="my-albums">My Albums</h2>
+<div class="album-container">
+<div class="album-card olivia">
+    <img class="album-cover" src="images/olivia.jpg">
+    <h2>You Seem Pretty Sad for a Girl So in Love</h2>
+    <p><strong>Artist: Olivia Rodrigo</strong></p>
+    <p><strong>Favorite song: My way</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2026</strong></p>
+</div>
+ 
+            
+
+<div class="album-card v">
+    <img class="album-cover" src="images/V.jpg">
+
+    <h2>Layover (EP)</h2>
+    <p><strong>Artist: V</strong></p>
+    <p><strong>Favorite song: Blue</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2023</strong></p>
+
+</div>
+<div class="album-card addison">
+    <img class="album-cover addison" src="images/addison.webp">
+    <h2>Addison</h2>
+    <p><strong>Artist: Addison Rae</strong></p>
+    <p><strong>Favorite song: Times Like These</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2025</strong></p>
+</div>
+<div class="album-card submarine">
+<img class="album-cover" src="images/submarine.jpg">
+<h2>Submarine</h2>
+<p><strong>Artist: The Marias</strong></p>
+<p><strong>Favorite song: Sienna</strong></p>
+<p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+<p><strong>Released 2021</strong></p>
+</div>
+<div class="album-card ctrl">
+    <img class="album-cover ctrl" src="images/ctrl.jpg">
+    <h2>CTRL</h2>
+    <p><strong>Artist: SZA</strong></p>
+    <p><strong>Favorite song: Garden(Say It Like Dat)</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2017</strong></p>
+</div>
+    <div class="album-card skool">
+        <img class="album-cover skool" src="images/skool.jpg">
+        <h2>Skool Love Affair</h2>
+        <p><strong>Artist: BTS</strong></p>
+        <p><strong>Favorite song: Tomorrow</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2014</strong></p>
+    </div>
+    <div class="album-card charm">
+        <img class="album-cover charm" src="images/charm.jpg">
+        <h2>Charm</h2>
+        <p><strong>Artist: Clairo</strong></p>
+        <p><strong>Favorite song: Add Up My Love</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2024</strong></p>
+    </div>
+    <div class="album-card best">
+        <img class="album-cover best" src="images/best.jpg">
+        <h2>Mans Best Friend</h2>
+        <p><strong>Artist: Sabrina Carpenter</strong></p>
+        <p><strong>Favorite song: Never Getting Laid</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2025</strong></p>
+    </div>
+    <div class="album-card love">
+        <img class="album-cover love" src="images/love.jpg">
+        <h2>LOVE YOURSELF 承 'Her'</h2>
+        <p><strong>Artist: BTS</strong></p>
+        <p><strong>Favorite song: Pied Piper</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2017</strong></p>
+    </div>
+    <div class="album-card verano">
+        <img class="album-cover verano" src="images/verano.webp">
+        <h2>Un Verano Sin Ti</h2>
+        <p><strong>Artist: Bad Bunny</strong></p>
+        <p><strong>Favorite song: Efecto</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2022</strong></p>
+    </div>
+    <div class="album-card live">
+        <img class="album-cover live" src="images/live.jpg">
+        <h2>LIVE.LOVE.A$AP</h2>
+        <p><strong>Artist: A$AP Rocky</strong></p>
+        <p><strong>Favorite song: Brand New Guy(feat.ScHoolboy Q)</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <P><strong>Released 2011</strong></P>
+    </div>
+    <div class="album-card short">
+        <img class="album-cover short" src="images/short.jpg">
+        <h2>Short n' Sweet</h2>
+        <p><strong>Artist: Sabrina Carpenter</strong></p>
+        <p><strong>Favorite song: Don't Smile</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2024</strong></p>
+    </div>
+    <div class="album-card nadie">
+        <img class="album-cover nadie" src="images/nadie.png">
+        <h2>nadie sabe lo que va pasar mañana </h2>
+        <p><strong>Artist: Bad Bunny</strong></p>
+        <p><strong>Favorite song: NADIE SABE</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2023</strong></p>
+
+
+    </div>
+
+    <div class="album-card ultra">
+        <img class="album-cover ultra" src="images/ultra.jpg">
+        <h2>Ultraviolence</h2>
+        <p><strong>Artist: Lana Del Rey</strong></p>
+        <p><strong>Favorite song: The Other Woman</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2014</strong></p>
+    </div>
+    <div class="album-card most">
+        <img class="album-cover most" src="images/most.jpg">
+        <h2>The Most Beautiful Moment in Life: Young Forever</h2>
+        <p><strong>Artist: BTS</strong></p>
+        <p><strong>Favorite song: Butterfly (Prologue Mix)</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2015</strong></p>
+    </div>
+    <div class="album-card debir">
+        <img class="album-cover most" src="images/debir.png">
+        <h2>DeBÍ TiRAR MáS FOToS</h2>
+        <p><strong>Artist: Bad Bunny</strong></p>
+        <p><strong>Favorite song: EoO</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2025</strong></p>
+    </div>
+    <div class="album-card new">
+        <img class="album-cover new" src="images/new.png">
+        <h2>NewJeans 2nd EP 'Get Up'</h2>
+        <p><strong>Artist: NewJeans</strong></p>
+        <p><strong>Favorite song: Get Up</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2023</strong></p>
+    </div>
+    <div class="album-card jean">
+        <img class="album-cover jean" src="images/jean.jpg">
+        <h2>NewJeans 1st EP 'NewJeans'</h2>
+        <p><strong>Artist: NewJeans</strong></p>
+        <p><strong>Favortie song: Cookie</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2022</strong></p>
+    </div>
+    <div class="album-card romance">
+        <img class="album-cover romance" src="images/romance.jpg">
+        <h2>Romance</h2>
+        <p><strong>Artist: Luis Miguel</strong></p>
+        <p><strong>Favorite song: Te Extraño</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 1991</strong></p>
+    </div>
+    <div class="album-card map">
+        <img class="album-cover map" src="images/map.png">
+        <h2>MAP OF THE SOUL: 7</h2>
+        <p><strong>Artist: BTS</strong></p>
+        <p><strong>Favorite song: My Time</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2020</strong></p>
+    </div>
+    
+    
+    
+</div>
+</div>
+</div>
+<div class="sammy-faves">
+<h2 id="sammy-faves">Sammy's Faves</h2>
+<div class="album-container">
+    <div class="album-card bunny">
+        <img class="album-cover" src="images/bunny.png">
+       <h2>DeBÍ TiRAR MáS FOToS</h2> 
+        <p><strong>Artist: Bad Bunny</strong></p>
+        <p><strong>Favorite song: BAILE INoLVIDABLE </strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2025</strong></p>
+            </div>
+    <div class="album-card superache">
+        <img class="album-cover" src="images/superache.jpg">
+       <h2>Superache</h2>
+       <p><strong>Artist: Conan Gray</strong></p>
+        <p><strong>Favorite song: The Exit</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2022</strong></p>
+        </div>
+        <div class="album-card chrome">
+            <img class="album-cover" src="images/chrome.jpg">
+            <h2><strong>Chromakopia</strong></h2>
+            <p><strong>Artist: Tyler, The Creator</strong></p>
+            <p><strong>Favorite song: Sticky</strong></p>
+            <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+            <p><strong>Released 2024</strong></p>
+        </div>
+        <div class="album-card guts">
+        <img class="album-cover" src="images/guts.png">
+        <h2><strong>GUTS</strong></h2>
+        <p><strong>Artist: Olivia Rodrigo</strong></p>
+        <p><strong>Favorite song: Logical</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2023</strong></p>
+        </div>
+        <div class="album-card olivia">
+    <img class="album-cover" src="images/olivia.jpg">
+
+    <h2>You Seem Pretty Sad for a Girl So in Love</h2>
+    <p><strong>Artist: Olivia Rodrigo</strong></p>
+    <p><strong>Favorite song: Stupid Song</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2026</strong></p>
+        </div>
+        <div class="album-card hit">
+            <img class="album-cover" src="images/hit.png">
+            <h2>HIT ME HARD AND SOFT</h2>
+            <p><strong>Artist: Billie Eilish</strong></p>
+            <p><strong>Favorite song: THE GREATEST</strong></p>
+             <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+            <p><strong>Released 2024</strong></p>
+        </div>
+    <div class="album-card ctrl">
+    <img class="album-cover ctrl" src="images/ctrl.jpg">
+    <h2>CTRL</h2>
+    <p><strong>Artist: SZA</strong></p>
+    <p><strong>Favorite song: Supermodel</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2017</strong></p>
+</div>
+<div class="album-card mac">
+    <img class="album-cover mac" src="images/mac.png">
+    <h2>Balloonerism</h2>
+    <p><strong>Artist: Mac Miller</strong></p>
+    <p><strong>Favorite song: Stoned</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2025</strong></p>
+</div>
+<div class="album-card romantic">
+    <img class="album-cover romantic" src="images/romantic.png">
+    <h2>The Romantic</h2>
+    <p><strong>Artist: Bruno Mars</strong></p>
+    <p><strong>Favorite song: I Just Might</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2026</strong></p>
+</div>
+<div class="album-card sour">
+    <img class="album-cover sour" src="images/sour.png">
+    <h2>SOUR</h2>
+    <p><strong>Artist: Olivia Rodrigo</strong></p>
+    <p><strong>Favorite song: Favorite Crime</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2021</strong></p>
+</div>
+<div class="album-card doo">
+        <img class="album-cover doo" src="images/doo.png">
+        <h2>Doo-Wops & Hooligans</h2>
+        <p><strong>Artist: Bruno Mars</strong></p>
+        <p><strong>Favorite song: Marry You</strong></p>
+        <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+        <p><strong>Released 2010</strong></p>
+            </div>
+<div class="album-card juke">
+    <img class="album-cover juke" src="images/juke.png">
+    <h2>Unorthodox Jukebox</h2>
+    <p><strong>Artist: Bruno Mars</strong></p>
+    <p><strong>Favorite song: Locked Out of Heaven</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2012</strong></p>
+</div>
+
+</div>
+</div>
+
+<div class="shay-fave">
+<h2 id="shay-fave">Shay's Faves</h2>
+<div class="album-container">
+<div class="album-card damn">
+    <img class="album-cover" src="images/damn.jpg">
+    <h2>DAMN.</h2>
+    <p><strong>Artist: Kendrick Lamar</strong></p>
+    <p><strong>Favorite song: FEEL.</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2017</strong></p>
+   </div>
+   <div class="album-card escape">
+    <img class="album-cover" src="images/escape.webp">
+    <h2>The Great Escape</h2>
+    <p><strong>Artist: Larry June & The Alchemist</strong></p>
+    <p><strong>Favorite song: Margie's Candy House</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2023</strong></p>
+   </div>
+   <div class="album-card late">
+    <img class="album-cover" src="images/late.jpg">
+    <h2>Late Registration</h2>
+    <p><strong>Artist: Kanye West</strong></p>
+    <p><strong>Favorite song: Late</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 2005</strong></p>
+   </div>
+   <div class="album-card pray">
+    <img class="album-cover" src="images/pray.jpg">
+    <h2>Pray for Paris</h2>
+    <p><strong>Artist: Westside Gunn</strong></p>
+    <p><strong>French Toast(feat. Wale & Joyce Wrice)</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <P><strong>Released 2020</strong></P>
+   </div>
+   <div class="album-card soul">
+    <img class="album-cover" src="images/soul.jpg">
+    <h2>Candy Rain</h2>
+    <p><strong>Artist: Soul for Real</strong></p>
+    <p><strong>Favorite song: Candy Rain</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 1995</strong></p>
+   </div>
+   <div class="album-card enter">
+    <img class="album-cover" src="images/enterj.jpg">
+    <h2>Enter The Wu-Tang (36 Chambers)</h2>
+    <p><strong>Artist: Wu-Tang Clan</strong></p>
+    <p><strong>Favorite song: Da Mystery Of Chessboxin'</strong></p>
+    <p><strong>▶︎•၊၊||၊|။|||||။၊|။•</strong></p>
+    <p><strong>Released 1993</strong></p>
+   </div>
+   
+</div>
+</div>
+<section class="album-museum">
+
+    <h2 id="museum">Album Museum</h2>
+
+    <div class="museum-exhibit">
+
+    <img src="images/olivia.jpg" class="museum-cover">
+
+    <div class="museum-info">
+
+        <h2>Exhibit Number 1</h2>
+        <hr>
+        <h2>You Seem Pretty Sad for a Girl So in Love</h2>
+        <p><strong>Artist: Olivia Rodrigo</strong></p>
+        <p><strong>Genre: Pop</strong></p>
+        <p><strong>Tracks: 13</strong></p>
+        <P><strong>Length: 51 minutes</strong></P>
+        <hr>
+        <h2>Favorite Lyric</h2>
+        <p><strong>Begged: "I'm a penny in a fountain just waiting
+         on my luck to change"</strong></p>
+         <p><strong>Why: I am waiting for my luck to change</strong></p>
+         <hr>
+         <h2>Olivia Rodrigo Gallery</h2>
+
+    <div class="gallery">
+ <div class="gallery-item">
+        <img src="images/fall.jpg">
+ <p><strong>Fallon Interview</strong></p>
+</div>
+<div class="gallery-item">
+        <img src="images/promo3.jpg">
+        <p><strong>Babysitting for Kimmel</strong></p>
+        </div>
+        <div class="gallery-item">
+       <img src="images/mv.jpg">
+        <p><strong>Stupid Song Music Video</strong></p>
+        </div>
+
+        <div class="gallery-item">
+        <img src="images/promo4.jpg">
+        <p><strong>Kimmel Interview</strong></p>
+        </div>
+    </div>
+    <hr>
+    </div>
+    </div>
+</section>
+<section class="album-museum">
+
+ <h2 id="museum"></h2>
+
+    <div class="museum-exhibit">
+
+    <img src="images/addison.webp" class="museum-cover">
+
+    <div class="museum-info">
+
+    <h2>Exhibit Number 2</h2>
+    <hr>
+    <h3>Addison</h3>
+    <p><strong>Artist: Addison Rae</strong></p>
+    <p><strong>Genre: Pop</strong></p>
+    <p><strong>Tracks: 12</strong></p>
+    <p><strong>Length: 33 minutes</strong></p>
+    <hr>
+    <h2>Favorite Lyric</h2>
+    <p><strong>Times Like These: "Am I too young to be this mad?"</strong></p>
+    <p><strong>Why: I am young and mad</strong></p>
+    <hr>
+    <h2>Addison Rae Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/headphones.jpg">
+            <p><strong>Headphones On Music Video</strong></p>
+        </div>
+            <div class="gallery-item">
+                <img src="images/concert.jpg">
+                <p><strong>On Stage</strong></p>
+            </div>
+                <div class="gallery-item">
+                    <img src="images/pop.jpg">
+                    <p><strong>Popcast</strong></p>
+                </div>
+                    <div class="gallery-item">
+                        <img src="images/luck.jpg">
+                    <p><strong>Lucky Jeans</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    </section>
+
+
+<div class="about">
+<h2 id="about">About this website</h2>
+<p><strong>This website is a digital archive that shows some of my family, friends, and my favorite music albums.</strong></p>
+</div>
+<footer>
+  
+    <h2>♫⋆｡Album Archive♪♬</h2>
+    <p><strong>Enjoy the music!</strong></p>
+    <p><strong>Kaylee Almonte</strong></p>
+    <p><strong>-made in 2026-</strong></p>
+     <a href="#back-top"><strong>Back To Top</strong></a>
+   
+</footer>
+<h1>My Album Archive</h1>
+</body>
+<https://github.com/kayleealmonte225/My-Album-Archive.git>
+</html>
